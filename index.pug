@@ -1,0 +1,22 @@
+//output: index.html
+
+- var namespace = "pikapix"
+- var author = "Frank Dip"
+- var version = "Version 1.0"
+- var title = "HTML5 Canvas Challenge ピカチュー"
+- var description = "HTML5 Canvas Challenge ピカチュー. " + version + "."
+
+doctype html
+html(lang="en-US")
+head
+  meta(charset="utf-8")
+  title #{title}
+  meta(name="description", content=description)
+  meta(name="author", content="Frank Dip")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+  link(rel="stylesheet", href="styles\\styles.min.css")
+body
+  div(class=namespace + "-wrapper")
+    canvas(id="js-" + namespace + "-canvas", width="450px", height="400px")
+  
+  script(src="script\\scripts.js")
